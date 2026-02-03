@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PlastiClear</title>
+
+  <!-- INTERNAL CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* ABOUT SECTION */
+    #about {
+      background-color: #ffffff;
+    }
+
+    /* FEATURES SECTION */
+    #features {
+      background-color: #e8f5e9;
+    }
+
+    #features ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #features li {
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    /* BUTTON STYLE */
+    button {
+      padding: 10px 20px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #1b5e20;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h2>About PlastiClear</h2>
+    <p>
+      PlastiClear is a mobile-based system that helps households,
+      waste collectors, and junkshops identify, sort, and price
+      recyclable plastics efficiently.
+    </p>
+  </section>
+
+  <!-- FEATURES SECTION -->
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Plastic Identification</li>
+      <li>Real-Time Junkshop Pricing</li>
+      <li>Proper Waste Sorting Guide</li>
+      <li>Nearby Junkshop Locator</li>
+    </ul>
+
+    <button id="showMessageBtn">Learn More</button>
+    <p id="message"></p>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer>
+    <p>&copy; 2026 PlastiClear. All Rights Reserved.</p>
+  </footer>
+
+  <!-- INTERNAL JAVASCRIPT -->
+  <script>
+    // Get the button and message elements
+    const button = document.getElementById("showMessageBtn");
+    const message = document.getElementById("message");
+
+    // Add click event listener to the button
+    button.addEventListener("click", function () {
+      // Display a message when the button is clicked
+      message.textContent =
+        "PlastiClear helps turn plastic waste into income while protecting the environment.";
+    });
+  </script>
+
+</body>
+</html>
